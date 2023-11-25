@@ -21,9 +21,9 @@ defineEmits<{
     type="range"
     class="w-full range range-secondary"
   />
-  Temperature: {{ modelValue }}
+  Température: {{ modelValue }}
   <span class="font-bold" v-if="modelValue >= 0.5">
-    - More random, creative, and risky</span
+    - Plus aléatoire, créatif et risqué</span
   >
-  <span class="font-bold" v-else> - More focused, deterministic, and safe</span>
+  <span class="font-bold" v-else> - Plus ciblé, déterministe et sûr</span>
 </template>

@@ -58,7 +58,7 @@ watch(
       <header
         class="dark:bg-gray-900 bg-gray-200 px-4 flex justify-between items-center"
       >
-        Customer Support Chat
+        Chat du support client
         <button class="p-4 pr-0" @click="open = false">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,13 +79,13 @@ watch(
       <!-- Messages -->
       <div class="messages p-4 overflow-y-scroll max-h-[80vh]" ref="messageBox">
         <div v-if="!messages.length" class="text-center w-[350px] m-auto">
-          <strong class="text-lg">Chat with Botman!</strong>
-          <p>Our A.I. powered assistant</p>
-          <strong class="block mt-10">Go ahead and ask us something:</strong>
+          <strong class="text-lg">Discutez avec Botman !</strong>
+          <p>Notre I.A. assistant motorisé</p>
+          <strong class="block mt-10">Allez-y et demandez-nous quelque chose :</strong>
           <ul class="list-inside list-disc text-left">
-            <li>What is social media post generator?</li>
-            <li>How can I get human support?</li>
-            <li>How was this tool built?</li>
+            <li>Qu'est-ce que Générateur de publications sur les réseaux sociaux ?</li>
+            <li>Comment puis-je obtenir un soutien humain ?</li>
+            <li>Comment cet outil a-t-il été construit ?</li>
           </ul>
         </div>
         <ChatBubble

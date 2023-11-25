@@ -13,7 +13,7 @@ const form = reactive({
   <form @submit.prevent="$emit('submit', form)" class="mb-10">
     <div class="flex">
       <input
-        placeholder="Full Article URL"
+        placeholder="URL de l'article complet"
         v-model="form.url"
         class="input input-bordered rounded-r-none w-full max-w-full"
         type="text"
