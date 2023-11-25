@@ -14,7 +14,7 @@ defineExpose({
 </script>
 <template>
     <CardGeneric
-    title="facebook"
+    title="Facebook"
     :state="state"
     :body="announcement"
     >
