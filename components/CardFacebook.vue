@@ -18,8 +18,8 @@ defineExpose({
     :state="state"
     :body="announcement"
     >
-    <button class="btn btn-neutral" @click="generate()">Regenerate</button>
-    <a class="btn btn-primary" target="_blank">Post</a>
+    <button class="btn btn-neutral" @click="generate()">Régénérer</button>
+    <a class="btn btn-primary" target="_blank">Publier</a>
 
 </CardGeneric>
 

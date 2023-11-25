@@ -21,12 +21,12 @@ defineExpose({
     >
     <div class="flex w-full justify-between items-center">
         <div class="text-xs">
-            Character Count :
+            Nombre de caractères :
             <strong>{{ announcement.length }}</strong>
         </div>
     </div>
-    <button class="btn btn-neutral" @click="generate()">Regenerate</button>
-    <a class="btn btn-primary" target="_blank">Post</a>
+    <button class="btn btn-neutral" @click="generate()">Régénérer</button>
+    <a class="btn btn-primary" target="_blank">Publier</a>
 
 </CardGeneric>
 

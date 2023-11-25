@@ -18,7 +18,7 @@ const form = reactive({
         class="input input-bordered rounded-r-none w-full max-w-full"
         type="text"
       />
-      <button class="btn rounded-l-none">Generate Announcements</button>
+      <button class="btn rounded-l-none">Générer des annonces</button>
     </div>
     <TemperatureSelector v-model="form.temperature" />
   </form>
