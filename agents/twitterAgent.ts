@@ -13,6 +13,6 @@ export const twitterAgent = createAgent((context) => {
         content: `Créez un tweet sur l'article suivant : ${context.url}. Utilisez des sauts de ligne pour une lecture facile. DOIT contenir moins de 280 caractères ! DOIT inclure l'URL`,
       },
     ],
-    max_tokens: 350,
+    max_tokens: 500,
   };
 });

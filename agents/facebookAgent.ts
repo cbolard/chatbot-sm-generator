@@ -10,9 +10,9 @@ export const facebookAgent = createAgent((context) => {
       },
       {
         role: "user",
-        content: `Créez un tweet sur l'article suivant : ${context.url}. Utilisez des sauts de ligne pour une lecture facile. DOIT contenir 1000 caractères ! `,
+        content: `Créez un post facebook sur l'article suivant : ${context.url}. Utilisez des sauts de ligne pour une lecture facile. DOIT contenir moins de 350 caractères ! DOIT inclure l'URL`,
       },
     ],
-    max_tokens: 1000,
+    max_tokens: 500,
   };
 });
