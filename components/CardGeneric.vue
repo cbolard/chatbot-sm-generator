@@ -31,7 +31,11 @@ const isLoading = computed(() => props.state === "loading");
       </div>
 
       <div class="card-actions justify-end" v-if="body">
-        <slot></slot>
+        <slot>
+
+          
+
+        </slot>
       </div>
     </div>
   </div>

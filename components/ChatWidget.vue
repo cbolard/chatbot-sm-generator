@@ -26,7 +26,7 @@ const messagesForApi = computed(() =>
   messages.value.map(m => ({
     role: m.userId,
     content: m.text,
-  })).slice(-2)
+  })).slice(-5)
 )
 
 async function handleNewMessage(message: Message) {

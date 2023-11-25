@@ -15,8 +15,10 @@ Authorization: Bearer {{$dotenv NUXT_OPENAI_API_KEY}}
 
 POST http://localhost:3000/api/ai
 Content-Type: application/json
+
 {
-  "messages": [{"role": "user", "content": "Say this is a test2!"}],
-  "temperature": 0,
-  "n": 1
+  "agent": "facebookAgent",
+  "url": "https://vueschool.io/articles/vuejs-tutorials/sorting-filtering-and-paginating-data-from-a-laravel-backend-in-a-vue-js-spa/"
+
 }
+
