@@ -16,7 +16,7 @@ const isLoading = computed(() => props.state === "loading");
         <slot name="title">{{ title }}</slot>
         <AppLoading v-if="isLoading" />
         <span v-if="isError" class="text-red-500 text-sm font-normal">
-          Error generating announcement
+          Erreur lors de la génération de l'annonce
         </span>
       </h2>
 
