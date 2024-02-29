@@ -13,12 +13,12 @@ const form = reactive({
   <form @submit.prevent="$emit('submit', form)" class="mb-10">
     <div class="flex">
       <input
-        placeholder="URL de l'article complet"
+        placeholder="URL de l'annonce du poste à pourvoir"
         v-model="form.url"
         class="input input-bordered rounded-r-none w-full max-w-full"
         type="text"
       />
-      <button class="btn rounded-l-none">Générer des annonces</button>
+      <button class="btn rounded-l-none">Générer des lettres de motivation</button>
     </div>
     <TemperatureSelector v-model="form.temperature" />
   </form>

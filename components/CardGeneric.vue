@@ -8,6 +8,7 @@ const props = defineProps<{
 
 const isError = computed(() => props.state === "error");
 const isLoading = computed(() => props.state === "loading");
+
 </script>
 <template>
   <div class="card bg-base-100 shadow-xl border-t-4 border-primary">
@@ -16,17 +17,21 @@ const isLoading = computed(() => props.state === "loading");
         <slot name="title">{{ title }}</slot>
         <AppLoading v-if="isLoading" />
         <span v-if="isError" class="text-red-500 text-sm font-normal">
-          Erreur lors de la génération de l'annonce
+          Erreur lors de la génération de la lettre
         </span>
       </h2>
 
       <div v-if="body">
         <hr class="opacity-10 pb-5" />
-        <pre class="whitespace-pre-wrap font-sans text-lg">{{ body }}</pre>
+        <pre class="whitespace-pre-wrap font-sans text-lg">
+          <textarea style="width: 100%; height:800px; border:none">
+          {{ body }}
+            </textarea>
+        </pre>
       </div>
       <div v-else>
         <span class="italic opacity-80"
-          >Importer un article pour générer une annonce</span
+          >Importer une offre d'emploi pour générer une lettre</span
         >
       </div>
 

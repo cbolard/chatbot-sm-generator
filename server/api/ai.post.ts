@@ -1,10 +1,8 @@
 import OpenAI from "openai";
 
 import * as agents from "@/agents";
-import { customerSupportAgent } from '~/agents';
 
 export default defineEventHandler(async (event) => {
-
   const body = await readBody(event);
   const agent = body.agent || "customerSupportAgent";
 
@@ -18,19 +16,16 @@ export default defineEventHandler(async (event) => {
 
   const completion = async function main() {
     const completion = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4-0314",
       messages: body.messages || [],
       temperature: body.temperature || 1,
-    // @ts-expect-error checking above if the agent exists
+      // @ts-expect-error checking above if the agent exists
 
       ...agents[agent](body),
-
     });
-  
-    return completion
-  }
-  
 
-  return completion()
-  
-})
+    return completion;
+  };
+
+  return completion();
+});

@@ -3,7 +3,7 @@ const props = defineProps<{
     url:string;
     temperature:number;
 }>()
-const {chat, state, firstMessage} = useChatAi({agent: "twitter"})
+const {chat, state, firstMessage} = useChatAi({agent: "frontend"})
 
 const announcement = computed(()=> firstMessage.value?.content)
 
@@ -14,7 +14,7 @@ defineExpose({
 </script>
 <template>
     <CardGeneric
-    title="Twitter"
+    title="Lettre de motivation - frontend"
     :state="state"
     :body="announcement"
     :class="mb-10"

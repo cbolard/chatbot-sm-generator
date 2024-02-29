@@ -1,10 +1,10 @@
 // register all agent files here
 export * from "./customerSupportAgent";
 export * from "./facebookAgent";
-export * from "./twitterAgent";
+export * from "./frontendAgent"
 
 // and register types here
-export type Agent = "facebook" | "twitter" | "customerSupport";
+export type Agent = "facebook" | "frontend" | "customerSupport";
 
 // util function for creating trainings with proper typing
 import type { CreateChatCompletionRequest } from "openai";

@@ -83,7 +83,7 @@ watch(
           <p>Notre I.A. assistant motorisé</p>
           <strong class="block mt-10">Allez-y et demandez-nous quelque chose :</strong>
           <ul class="list-inside list-disc text-left">
-            <li>Qu'est-ce que Générateur de publications sur les réseaux sociaux ?</li>
+            <li>Qu'est-ce que Générateur de lettres de motivation - développeur web ?</li>
             <li>Comment puis-je obtenir un soutien humain ?</li>
             <li>Comment cet outil a-t-il été construit ?</li>
           </ul>

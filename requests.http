@@ -5,7 +5,7 @@ Content-Type: application/json
 Authorization: Bearer {{$dotenv NUXT_OPENAI_API_KEY}}
 
 {
-  "model": "gpt-3.5-turbo",
+  "model": "gpt-4-0314",
   "messages": [{"role": "user", "content": "Say this is a test!"}],
   "temperature": 0,
   "n": 1
